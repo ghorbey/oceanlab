@@ -6,59 +6,65 @@
     <title>@ViewData["Title"] - Oceanlab</title>
 
     <environment include="Development">
-        <link rel="stylesheet" href="~/lib/bootstrap/dist/css/bootstrap.css" />
+        <link rel="stylesheet" href="~/libraries/bootstrap/css/bootstrap.css" />
         <link rel="stylesheet" href="~/css/common.css" />
         <link rel="stylesheet" href="~/css/site.css" />
     </environment>
     <environment exclude="Development">
-        <link rel="stylesheet" href="https://ajax.aspnetcdn.com/ajax/bootstrap/3.3.7/css/bootstrap.min.css"
-              asp-fallback-href="~/lib/bootstrap/dist/css/bootstrap.min.css"
-              asp-fallback-test-class="sr-only" asp-fallback-test-property="position" asp-fallback-test-value="absolute" />
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/css/bootstrap.min.css"
+              asp-fallback-href="~/libraries/bootstrap/css/bootstrap.min.css"
+              asp-fallback-test-class="sr-only" asp-fallback-test-property="position" asp-fallback-test-value="absolute"
+              crossorigin="anonymous"
+              integrity="sha384-PsH8R72JQ3SOdhVi3uxftmaW6Vc51MKb0q5P2rRUpPvrszuE4W1povHYgTpBfshb" />
         <link rel="stylesheet" href="~/css/common.min.css" asp-append-version="true" />
         <link rel="stylesheet" href="~/css/site.min.css" asp-append-version="true" />
     </environment>
 </head>
 <body>
     <div class="container body-content">
-        <nav class="container navbar navbar-expand fixed-top">
+        <nav class="container navbar navbar-expand fixed-top navbar-default">
             <div class="collapse navbar-collapse">
-                <ul class="navbar-nav">
-                    <li class="nav-item active"><a asp-area="" asp-controller="About" asp-action="Index" class="nav-link">About</a></li>
-                    <li class="nav-item"><a asp-area="" asp-controller="Tools" asp-action="Index" class="nav-link">Tools</a></li>
-                    <li class="nav-item"><a asp-area="" asp-controller="Services" asp-action="Index" class="nav-link">Services</a></li>
-                    <li class="nav-item"><a asp-area="" asp-controller="OclToken" asp-action="Index" class="nav-link">OCL Token</a></li>
-                    <li class="nav-item"><a asp-area="" asp-controller="Medium" asp-action="Index" class="nav-link">Medium</a></li>
-                    <li class="nav-item"><a asp-area="" asp-controller="Contact" asp-action="Index" class="nav-link">Contact</a></li>
-                </ul>
+                <div class="navbar-nav">
+                    <a asp-area="" asp-controller="About" asp-action="Index" class="nav-item nav-link active">About</a>
+                    <a asp-area="" asp-controller="Tools" asp-action="Index" class="nav-item nav-link">Tools</a>
+                    <a asp-area="" asp-controller="Services" asp-action="Index" class="nav-item nav-link">Services</a>
+                    <a asp-area="" asp-controller="OclToken" asp-action="Index" class="nav-item nav-link">OCL Token</a>
+                    <a asp-area="" asp-controller="Medium" asp-action="Index" class="nav-item nav-link">Medium</a>
+                    <a asp-area="" asp-controller="Contact" asp-action="Index" class="nav-item nav-link">Contact</a>
+                </div>
             </div>
         </nav>
         @RenderBody()
     </div>
     <footer class="footer">
-        <div class="container">
-            <p>&copy; 2017 - Oceanlab</p>
-        </div>
+        <div class="container">&copy; 2017 - Oceanlab</div>
     </footer>
 
     <environment include="Development">
-        <script src="~/lib/jquery/dist/jquery.js"></script>
-        <script src="~/lib/bootstrap/dist/js/bootstrap.js"></script>
+        <script src="~/libraries/jquery/js/jquery.js"></script>
+        <script src="~/libraries/popper.js/js/popper.js"></script>
+        <script src="~/libraries/bootstrap/js/bootstrap.js"></script>
         <script src="~/js/common.js" asp-append-version="true"></script>
     </environment>
     <environment exclude="Development">
         <script src="https://ajax.aspnetcdn.com/ajax/jquery/jquery-2.2.0.min.js"
-                asp-fallback-src="~/lib/jquery/dist/jquery.min.js"
+                asp-fallback-src="~/libraries/jquery/js/jquery.min.js"
                 asp-fallback-test="window.jQuery"
                 crossorigin="anonymous"
                 integrity="sha384-K+ctZQ+LL8q6tP7I94W+qzQsfRV2a+AfHIi9k8z8l9ggpc8X+Ytst4yBo/hH+8Fk">
         </script>
-        <script src="https://ajax.aspnetcdn.com/ajax/bootstrap/3.3.7/bootstrap.min.js"
-                asp-fallback-src="~/lib/bootstrap/dist/js/bootstrap.min.js"
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.11.0/umd/popper.min.js"
+                asp-fallback-src="~/libraries/popper.js/js/popper.min.js"
+                crossorigin="anonymous"
+                integrity="sha384-b/U6ypiBEHpOf/4+1nzFpr53nxSS+GLCkfwBdFNTxtclqqenISfwAzpKaMNFNmj4">
+        </script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/js/bootstrap.min.js"
+                asp-fallback-src="~/libraries/bootstrap/js/bootstrap.min.js"
                 asp-fallback-test="window.jQuery && window.jQuery.fn && window.jQuery.fn.modal"
                 crossorigin="anonymous"
-                integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa">
+                integrity="sha384-alpBpkh1PFOepccYVYDB4do5UnbKysX5WZXm3XxPqe5iKTfUKjNkCk9SaVuEZflJ">
         </script>
-        <script src="~/js/site.min.js" asp-append-version="true"></script>
+        <script src="~/js/common.min.js" asp-append-version="true"></script>
     </environment>
 
     @RenderSection("Scripts", required: false)

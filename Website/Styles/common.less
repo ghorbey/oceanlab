@@ -1,29 +1,31 @@
-﻿@bgDefault: #0F012D;
-@bgHighlight: #0F012D;
-@colDefault: #00AFA7;
-@colHover: #00AFA7;
-@bgPageDefault: #FFFFFF;
+﻿@import "variables.less";
 
-/* --- Style --- */
-body {
-    background-color: @bgPageDefault;
+.bg-dark {
+    background-color: @bgDark !important;
+    border-color: @bgDarkHighlight;
+    color: @fontColorDark;
+
+    .title {
+        color: @fontTitleColorDark;
+    }
 }
 
-.footer {
-    position: absolute;
-    bottom: 0;
-    width: 100%;
-    height: 60px;
-    line-height: 60px;
+.bg-light {
+    background-color: @bgLight !important;
+    border-color: @bgDarkHighlight;
+    color: @fontColorLight;
 
-    .container {
-        background-color: @bgDefault;
+    .title {
+        color: @fontTitleColorLight;
     }
 }
 
 .navbar {
-    background-color: @bgDefault;
-    border-color: @bgHighlight;
+    background-color: @bgDark;
+    border-color: @bgDark;
+    border-bottom-width: 1px;
+    border-bottom-color: @bgPageDefault;
+    border-bottom-style: solid;
 
     .navbar-brand {
         color: @colDefault;
@@ -49,14 +51,14 @@ body {
         .active {
             > a, > a:hover, > a:focus {
                 color: @colHover;
-                background-color: @bgHighlight;
+                background-color: @bgDarkHighlight;
             }
         }
 
         .open {
             > a, > a:hover, > a:focus {
                 color: @colHover;
-                background-color: @bgHighlight;
+                background-color: @bgDarkHighlight;
 
                 .caret {
                     border-top-color: @colHover;
@@ -83,10 +85,10 @@ body {
     }
 
     .navbar-toggle {
-        border-color: @bgHighlight;
+        border-color: @bgDarkHighlight;
 
         &:hover, &:focus {
-            background-color: @bgHighlight;
+            background-color: @bgDarkHighlight;
         }
 
         .icon-bar {
@@ -101,7 +103,7 @@ body {
 
         &:hover, &:focus {
             color: @colHover;
-            background-color: @bgHighlight;
+            background-color: @bgDarkHighlight;
         }
     }
 }
