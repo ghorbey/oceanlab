@@ -1,0 +1,21 @@
+{
+  "version": "2.0.0",
+  "name": "asp.net",
+  "private": true,
+  "devDependencies": {},
+  "description": "None",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "bootstrap": "^3.3.7",
+    "fs": "0.0.1-security",
+    "gulp": "^3.9.1",
+    "gulp-less": "^3.3.2",
+    "jquery": "^3.2.1",
+    "less": "^2.7.3"
+  }
+}
