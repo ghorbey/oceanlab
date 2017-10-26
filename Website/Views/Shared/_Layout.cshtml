@@ -8,34 +8,37 @@
     <environment include="Development">
         <link rel="stylesheet" href="~/lib/bootstrap/dist/css/bootstrap.css" />
         <link rel="stylesheet" href="~/css/common.css" />
+        <link rel="stylesheet" href="~/css/site.css" />
     </environment>
     <environment exclude="Development">
         <link rel="stylesheet" href="https://ajax.aspnetcdn.com/ajax/bootstrap/3.3.7/css/bootstrap.min.css"
               asp-fallback-href="~/lib/bootstrap/dist/css/bootstrap.min.css"
               asp-fallback-test-class="sr-only" asp-fallback-test-property="position" asp-fallback-test-value="absolute" />
         <link rel="stylesheet" href="~/css/common.min.css" asp-append-version="true" />
+        <link rel="stylesheet" href="~/css/site.min.css" asp-append-version="true" />
     </environment>
 </head>
 <body>
-    <nav class="navbar navbar-expand">
-        <div class="collapse navbar-collapse">
-            <ul class="navbar-nav mr-auto">
-                <li class="nav-item active"><a asp-area="" asp-controller="About" asp-action="Index" class="nav-link">About</a></li>
-                <li class="nav-item"><a asp-area="" asp-controller="Tools" asp-action="Index" class="nav-link">Tools</a></li>
-                <li class="nav-item"><a asp-area="" asp-controller="Services" asp-action="Index" class="nav-link">Services</a></li>
-                <li class="nav-item"><a asp-area="" asp-controller="OclToken" asp-action="Index" class="nav-link">OCL Token</a></li>
-                <li class="nav-item"><a asp-area="" asp-controller="Medium" asp-action="Index" class="nav-link">Medium</a></li>
-                <li class="nav-item"><a asp-area="" asp-controller="Contact" asp-action="Index" class="nav-link">Contact</a></li>
-            </ul>
-        </div>
-    </nav>
     <div class="container body-content">
+        <nav class="container navbar navbar-expand fixed-top">
+            <div class="collapse navbar-collapse">
+                <ul class="navbar-nav">
+                    <li class="nav-item active"><a asp-area="" asp-controller="About" asp-action="Index" class="nav-link">About</a></li>
+                    <li class="nav-item"><a asp-area="" asp-controller="Tools" asp-action="Index" class="nav-link">Tools</a></li>
+                    <li class="nav-item"><a asp-area="" asp-controller="Services" asp-action="Index" class="nav-link">Services</a></li>
+                    <li class="nav-item"><a asp-area="" asp-controller="OclToken" asp-action="Index" class="nav-link">OCL Token</a></li>
+                    <li class="nav-item"><a asp-area="" asp-controller="Medium" asp-action="Index" class="nav-link">Medium</a></li>
+                    <li class="nav-item"><a asp-area="" asp-controller="Contact" asp-action="Index" class="nav-link">Contact</a></li>
+                </ul>
+            </div>
+        </nav>
         @RenderBody()
-        <hr />
-        <footer>
-            <p>&copy; 2017 - Oceanlab</p>
-        </footer>
     </div>
+    <footer class="footer">
+        <div class="container">
+            <p>&copy; 2017 - Oceanlab</p>
+        </div>
+    </footer>
 
     <environment include="Development">
         <script src="~/lib/jquery/dist/jquery.js"></script>
