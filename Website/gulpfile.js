@@ -1,8 +1,4 @@
-/// <binding BeforeBuild='less, build' />
-/*
-This file is the main entry point for defining Gulp tasks and using Gulp plugins.
-Click here to learn more. https://go.microsoft.com/fwlink/?LinkId=518007
-*/
+/// <binding BeforeBuild='build' />
 
 "use strict";
 
@@ -12,7 +8,8 @@ var gulp = require("gulp"),
     uglify = require("gulp-uglify"),
     cssmin = require("gulp-cssmin"),
     gulpDebug = require("gulp-debug"),
-    less = require("gulp-less");
+    less = require("gulp-less"),
+    imagemin = require('gulp-imagemin');
 
 gulp.task("js-min", function () {
     return gulp.src('./wwwroot/*.js')
@@ -37,6 +34,12 @@ gulp.task("less-min", function () {
             path.extname = path.extname.replace('.css', '.min.css');
         }))
         .pipe(gulp.dest('wwwroot/css'));
+});
+
+gulp.task('imagemin', function () {
+    return gulp.src('./Images/*')
+        .pipe(imagemin({ progressive: true }))
+        .pipe(gulp.dest('./wwwroot/images'));
 });
 
 /* Copy JS files */
@@ -92,4 +95,5 @@ gulp.task("build", function () {
     gulp.start('scripts-min:jquery');
     gulp.start('scripts:popper.js');
     gulp.start('scripts-min:popper.js');
+    gulp.start('imagemin');
 });
