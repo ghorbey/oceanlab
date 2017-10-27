@@ -14,8 +14,7 @@ namespace Website.Models
 
 		public MediumViewModel(WebsiteModel vm)
 		{
-			this.OclBtcValue = vm.OclBtcValue;
-			this.OclDollarValue = vm.OclDollarValue;
+			this.OclRate = vm.OclRate;
 			Init();
 		}
 

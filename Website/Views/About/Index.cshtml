@@ -137,56 +137,8 @@
 		{
 			<div class="sub-container bg-light">
 				<h2 class="title text-center">News &amp; updates</h2>
-				<div id="bottomCarousel" class="carousel slide" data-ride="carousel" data-interval="3000">
-					<div class="carousel-inner" role="listbox">
-						@{  Int32 Counter = 0; }
-						@{  foreach (News item in Model.NewsList)
-							{
-								String CssClass = "";
-								if (Counter == 0) { CssClass = "active"; }
-								if (Counter % 2 == 0)
-								{
-						@:<div class="carousel-item @CssClass">
-							@:<div class="container">
-								@:<div class="row">
-								}
-								<div class="col-sm-12 col-md-6">
-									<div class="card">
-										<div class="card-body">
-											<small class="text-muted">@item.Date</small>
-											<h4 class="card-title">@item.Title</h4>
-											<p class="card-text">@item.Content</p>
-											@if (@item.IsInternalLink)
-											{
-												@:<a href="@item.Link" class="card-link read-more">read more</a>
-											}
-											else
-											{
-												@:<a href="@item.Link" class="card-link read-more" target="_blank">read more</a>
-											}
-										</div>
-									</div>
-								</div>
-								if (Counter % 2 == 1)
-								{
-								@:</div>
-							@:</div>
-						@:</div>
-								}
-								Counter++;
-							}}
-					</div>
-					<!-- Left and right controls -->
-					<a class="carousel-control-prev" href="#bottomCarousel" role="button" data-slide="prev">
-						<span class="carousel-control-prev-icon" aria-hidden="true"></span>
-						<span class="sr-only">Previous</span>
-					</a>
-					<a class="carousel-control-next" href="#bottomCarousel" role="button" data-slide="next">
-						<span class="carousel-control-next-icon" aria-hidden="true"></span>
-						<span class="sr-only">Next</span>
-					</a>
-				</div>
+				@Html.Partial("_NewsView", Model.NewsList)
 			</div>
-							}
+		}
 	}
 </section>

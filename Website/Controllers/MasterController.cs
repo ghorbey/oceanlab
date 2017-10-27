@@ -14,8 +14,8 @@ namespace Website.Controllers
 		{
 			WebsiteModel wm = new WebsiteModel();
 
-			wm.OclBtcValue = 0.0005;
-			wm.OclDollarValue = 0.03;
+			wm.OclRate.OclBtcValue = 0.0005;
+			wm.OclRate.OclDollarValue = 0.03;
 
 			return View(wm);
 		}
@@ -24,8 +24,8 @@ namespace Website.Controllers
 		{
 			WebsiteModel wm = new WebsiteModel();
 
-			wm.OclBtcValue = 0.0005;
-			wm.OclDollarValue = 0.03;
+			wm.OclRate.OclBtcValue = 0.0005;
+			wm.OclRate.OclDollarValue = 0.03;
 
 			return wm;
 		}
