@@ -12,8 +12,14 @@ namespace Website.Controllers
 	{
 		public IActionResult Index()
 		{
-			ViewData["Message"] = "Your application description page.";
-			return View();
+			AboutViewModel vm = new AboutViewModel();
+
+			vm.NewsList.Add(new News(DateTime.Now, "Title 1", "Content 1", "#", true));
+			vm.NewsList.Add(new News(DateTime.Now, "Title 2", "Content 2", "#", true));
+			vm.NewsList.Add(new News(DateTime.Now, "Title 3", "Content 3", "#", true));
+			vm.NewsList.Add(new News(DateTime.Now, "Title 4", "Content 4", "#", true));
+
+			return View(vm);
 		}
 	}
 }
