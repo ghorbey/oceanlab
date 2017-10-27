@@ -1,13 +1,41 @@
-a {
+body {
+  padding-top: 55px;
+}
+.bg-dark {
+  background-color: #0F012D !important;
+  color: #FFFFFF;
+}
+.bg-dark .title {
+  color: #00AFA7;
+  font-weight: bold;
+  margin-bottom: 30px;
+}
+.bg-dark a {
   color: #00AFA7;
 }
-a:hover {
+.bg-dark a:hover {
+  color: #00AFA7;
+}
+.bg-light {
+  background-color: #EEEEEF !important;
+  border-color: #0F012D;
+  color: #000000;
+}
+.bg-light .title {
+  color: #00AFA7;
+  font-weight: bold;
+  margin-bottom: 30px;
+}
+.bg-light a {
+  color: #00AFA7;
+}
+.bg-light a:hover {
   color: #00AFA7;
 }
 /* Wrapping element */
 /* Set some basic padding to keep content from hitting the edges */
-.title {
-  font-weight: bold;
+.read-more {
+  text-transform: uppercase;
 }
 .body-content {
   padding-right: 0;

@@ -37,7 +37,7 @@ gulp.task("less-min", function () {
 });
 
 gulp.task('imagemin', function () {
-    return gulp.src('./Images/*')
+    return gulp.src('./Images/**/*')
         .pipe(imagemin({ progressive: true }))
         .pipe(gulp.dest('./wwwroot/images'));
 });

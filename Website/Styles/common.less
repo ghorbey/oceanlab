@@ -1,31 +1,56 @@
 ﻿@import "variables.less";
 
-.bg-dark {
-    background-color: @bgDark !important;
-    border-color: @bgDarkHighlight;
-    color: @fontColorDark;
+.carousel {
+    .carousel-control-prev, .carousel-control-next {
+        background-color: @alternateColor;
+        color: @fontColorDark;
+        width: 40px;
+        height: 40px;
+        top: 35%;
+        border-radius: 50%;
+    }
 
-    .title {
-        color: @fontTitleColorDark;
+    .carousel-control-prev {
+        left: -50px;
+    }
+
+    .carousel-control-next {
+        right: -50px;
     }
 }
 
-.bg-light {
-    background-color: @bgLight !important;
-    border-color: @bgDarkHighlight;
-    color: @fontColorLight;
+.text-muted {
+    font-style: italic;
+}
 
-    .title {
-        color: @fontTitleColorLight;
+.nav {
+    > .nav-link {
+        color: @fontTitleColorDark;
+
+        &:hover {
+            color: @fontTitleColorDark;
+        }
     }
 }
 
 .navbar {
-    background-color: @bgDark;
-    border-color: @bgDark;
     border-bottom-width: 1px;
     border-bottom-color: @bgPageDefault;
     border-bottom-style: solid;
+
+
+    .btn-navbar {
+        color: @fontTitleColorDark;
+        background-color: @bgLight;
+        border-color: @bgLight;
+        border-radius: 15px;
+
+        &:hover {
+            color: @fontTitleColorDark;
+            background-color: @bgLight;
+            border-color: @bgLight;
+        }
+    }
 
     .navbar-brand {
         color: @colDefault;
@@ -38,47 +63,25 @@
     .navbar-nav {
         margin: 0 auto;
 
+        > .nav-link {
+            color: @fontTitleColorDark;
+
+            &:hover {
+                color: @fontTitleColorDark;
+            }
+        }
+
+        .nav-link.active {
+            color: @fontTitleColorDark;
+            background-color: @bgDarkHighlight;
+        }
+
         > li {
             > a {
-                color: @colDefault;
+                color: @fontTitleColorDark;
 
                 &:hover, &:focus {
-                    color: @colHover;
-                }
-            }
-        }
-
-        .active {
-            > a, > a:hover, > a:focus {
-                color: @colHover;
-                background-color: @bgDarkHighlight;
-            }
-        }
-
-        .open {
-            > a, > a:hover, > a:focus {
-                color: @colHover;
-                background-color: @bgDarkHighlight;
-
-                .caret {
-                    border-top-color: @colHover;
-                    border-bottom-color: @colHover;
-                }
-            }
-        }
-
-        > .dropdown {
-            > a {
-                .caret {
-                    border-top-color: @colDefault;
-                    border-bottom-color: @colDefault;
-                }
-
-                &:hover, &:focus {
-                    .caret {
-                        border-top-color: @colHover;
-                        border-bottom-color: @colHover;
-                    }
+                    color: @fontTitleColorDark;
                 }
             }
         }

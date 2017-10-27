@@ -22,8 +22,9 @@
 </head>
 <body>
     <div class="container body-content">
-        <nav class="container navbar navbar-expand fixed-top navbar-default">
+        <nav class="container navbar navbar-dark bg-dark navbar-expand fixed-top pt-0 pb-0">
             <div class="collapse navbar-collapse">
+                <a asp-area="" asp-controller="About" asp-action="Index" class="navbar-brand">LOGO</a>
                 <div class="navbar-nav">
                     <a asp-area="" asp-controller="About" asp-action="Index" class="nav-item nav-link active">About</a>
                     <a asp-area="" asp-controller="Tools" asp-action="Index" class="nav-item nav-link">Tools</a>
@@ -32,12 +33,29 @@
                     <a asp-area="" asp-controller="Medium" asp-action="Index" class="nav-item nav-link">Medium</a>
                     <a asp-area="" asp-controller="Contact" asp-action="Index" class="nav-item nav-link">Contact</a>
                 </div>
+                <span class="navbar-text">
+                    <button type="button" class="btn btn-navbar align-middle">OCL</button>
+                </span>
             </div>
         </nav>
         @RenderBody()
     </div>
     <footer class="footer">
-        <div class="container">&copy; 2017 - Oceanlab</div>
+        <div class="container">
+            <div class="nav justify-content-center">
+                <a href="#" target="_blank" class="nav-link" title="Facebook">FB</a>
+                <a href="#" target="_blank" class="nav-link" title="Twitter">Twitter</a>
+                <a href="#" target="_blank" class="nav-link" title="Slack">Slack</a>
+                <a href="#" target="_blank" class="nav-link" title="Medium">Medium</a>
+            </div>
+            <div class="nav justify-content-center">
+                <a href="#" target="_blank" class="nav-link text-uppercase" title="Invest">Invest</a>
+                <a href="#" target="_blank" class="nav-link text-uppercase" title="Whitepaper">Whitepaper</a>
+                <a href="#" target="_blank" class="nav-link text-uppercase" title="FAQ">FAQ</a>
+                <a href="#" target="_blank" class="nav-link text-uppercase" title="Contact">Contact</a>
+            </div>
+            <div class="text-muted text-center">&copy; 2017 - Oceanlab</div>
+        </div>
     </footer>
 
     <environment include="Development">

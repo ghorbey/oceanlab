@@ -1,21 +1,52 @@
 ﻿@import "variables.less";
 
-a {
-    color: @fontTitleColorDark;
+body {
+    padding-top: 55px;
+}
 
-    &:hover {
+.bg-dark {
+    background-color: @bgDark !important;
+    color: @fontColorDark;
+
+    .title {
         color: @fontTitleColorDark;
+        font-weight: bold;
+        margin-bottom: @titleBottomMargin;
+    }
+
+    a {
+        color: @fontTitleColorDark;
+
+        &:hover {
+            color: @fontTitleColorDark;
+        }
     }
 }
 
-body {
-    
+.bg-light {
+    background-color: @bgLight !important;
+    border-color: @bgDarkHighlight;
+    color: @fontColorLight;
+
+    .title {
+        color: @fontTitleColorLight;
+        font-weight: bold;
+        margin-bottom: @titleBottomMargin;
+    }
+
+    a {
+        color: @fontTitleColorLight;
+
+        &:hover {
+            color: @fontTitleColorLight;
+        }
+    }
 }
 
 /* Wrapping element */
 /* Set some basic padding to keep content from hitting the edges */
-.title {
-    font-weight: bold;
+.read-more {
+    text-transform: uppercase;
 }
 
 .body-content {
