@@ -11,12 +11,25 @@ namespace Website.Models
 
 		public AboutViewModel()
 		{
-			NewsList = new List<News>();
+			Init();
 		}
 
 		public AboutViewModel(List<News> newsList)
 		{
-			NewsList.AddRange(newsList);
+			Init(newsList);
+		}
+
+		public AboutViewModel(WebsiteModel vm)
+		{
+			this.OclBtcValue = vm.OclBtcValue;
+			this.OclDollarValue = vm.OclDollarValue;
+			Init();
+		}
+
+		public void Init(List<News> newsList = null)
+		{
+			if (newsList == null) NewsList = new List<News>();
+			else NewsList.AddRange(newsList);
 		}
 	}
 

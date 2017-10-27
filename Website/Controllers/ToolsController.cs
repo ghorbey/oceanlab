@@ -10,10 +10,13 @@ namespace Website.Controllers
 {
 	public class ToolsController : MasterController
 	{
-		public IActionResult Index()
+		public override IActionResult Index()
 		{
+			ToolsViewModel vm = new ToolsViewModel(base.GetModel());
+
 			ViewData["Message"] = "Your application description page.";
-			return View();
+
+			return View(vm);
 		}
 	}
 }

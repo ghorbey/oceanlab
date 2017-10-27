@@ -12,8 +12,22 @@ namespace Website.Controllers
 	{
 		public virtual IActionResult Index()
 		{
-			
-			return View();
+			WebsiteModel wm = new WebsiteModel();
+
+			wm.OclBtcValue = 0.0005;
+			wm.OclDollarValue = 0.03;
+
+			return View(wm);
+		}
+
+		public virtual WebsiteModel GetModel()
+		{
+			WebsiteModel wm = new WebsiteModel();
+
+			wm.OclBtcValue = 0.0005;
+			wm.OclDollarValue = 0.03;
+
+			return wm;
 		}
 	}
 }

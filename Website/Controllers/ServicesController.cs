@@ -10,10 +10,13 @@ namespace Website.Controllers
 {
 	public class ServicesController : MasterController
 	{
-		public IActionResult Index()
+		public override IActionResult Index()
 		{
+			ServicesViewModel vm = new ServicesViewModel(base.GetModel());
+
 			ViewData["Message"] = "Your application description page.";
-			return View();
+
+			return View(vm);
 		}
 	}
 }

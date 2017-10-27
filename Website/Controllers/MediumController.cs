@@ -10,10 +10,13 @@ namespace Website.Controllers
 {
 	public class MediumController : MasterController
 	{
-		public IActionResult Index()
+		public override IActionResult Index()
 		{
+			MediumViewModel vm = new MediumViewModel(base.GetModel());
+
 			ViewData["Message"] = "Your application description page.";
-			return View();
+
+			return View(vm);
 		}
 	}
 }
