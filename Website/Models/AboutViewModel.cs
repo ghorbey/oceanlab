@@ -30,6 +30,7 @@ namespace Website.Models
 		{
 			if (newsList == null) NewsList = new List<News>();
 			else NewsList.AddRange(newsList);
+			Title = "About";
 		}
 	}
 

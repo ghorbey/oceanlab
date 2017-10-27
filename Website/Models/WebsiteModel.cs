@@ -9,6 +9,7 @@ namespace Website.Models
 	{
 		public Double OclBtcValue { get; set; }
 		public Double OclDollarValue { get; set; }
+		public String Title { get; set; }
 
 		public WebsiteModel()
 		{

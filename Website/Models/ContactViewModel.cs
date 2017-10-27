@@ -21,7 +21,7 @@ namespace Website.Models
 
 		public void Init()
 		{
-			
+			Title = "Contact";
 		}
 	}
 }
