@@ -5,7 +5,7 @@ using System.Threading.Tasks;
 
 namespace Website.Models
 {
-	public class AboutViewModel
+	public class AboutViewModel : WebsiteModel
 	{
 		public List<News> NewsList { get; set; }
 

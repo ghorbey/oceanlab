@@ -1,4 +1,5 @@
-﻿<!DOCTYPE html>
+﻿@model WebsiteModel
+<!DOCTYPE html>
 <html>
 <head>
     <meta charset="utf-8" />
@@ -34,7 +35,7 @@
                     <a asp-area="" asp-controller="Contact" asp-action="Index" class="nav-item nav-link">Contact</a>
                 </div>
                 <span class="navbar-text">
-                    <button type="button" class="btn btn-navbar align-middle">OCL</button>
+                    <button type="button" class="btn btn-navbar align-middle">OCL&nbsp;$@Model.OclDollarValue&nbsp;&nbsp;@Model.OclBtcValue&nbsp;BTC</button>
                 </span>
             </div>
         </nav>

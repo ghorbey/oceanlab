@@ -10,10 +10,12 @@ namespace Website.Controllers
 {
 	public class AboutController : MasterController
 	{
-		public IActionResult Index()
+		public override IActionResult Index()
 		{
 			AboutViewModel vm = new AboutViewModel();
 
+			vm.OclBtcValue = 0.0005;
+			vm.OclDollarValue = 0.03;
 			vm.NewsList.Add(new News(DateTime.Now, "Title 1", "Content 1", "#", true));
 			vm.NewsList.Add(new News(DateTime.Now, "Title 2", "Content 2", "#", true));
 			vm.NewsList.Add(new News(DateTime.Now, "Title 3", "Content 3", "#", true));

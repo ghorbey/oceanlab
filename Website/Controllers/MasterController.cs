@@ -8,11 +8,12 @@ using Website.Models;
 
 namespace Website.Controllers
 {
-	public abstract class MasterController : Controller
+	public class MasterController : Controller
 	{
-		public IActionResult Error()
+		public virtual IActionResult Index()
 		{
-			return View(new ErrorViewModel { RequestId = Activity.Current?.Id ?? HttpContext.TraceIdentifier });
+			
+			return View();
 		}
 	}
 }
