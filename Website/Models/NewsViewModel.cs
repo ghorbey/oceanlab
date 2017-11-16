@@ -5,14 +5,14 @@ using System.Threading.Tasks;
 
 namespace Website.Models
 {
-	public class MediumViewModel : WebsiteModel
+	public class NewsViewModel : WebsiteModel
 	{
-		public MediumViewModel()
+		public NewsViewModel()
 		{
 			Init();
 		}
 
-		public MediumViewModel(WebsiteModel vm)
+		public NewsViewModel(WebsiteModel vm)
 		{
 			this.OclRate = vm.OclRate;
 			Init();
@@ -20,7 +20,7 @@ namespace Website.Models
 
 		public void Init()
 		{
-			Title = "Medium";
+			Title = "News";
 		}
 	}
 }

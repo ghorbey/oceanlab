@@ -8,11 +8,11 @@ using Website.Models;
 
 namespace Website.Controllers
 {
-	public class MediumController : MasterController
+	public class NewsController : MasterController
 	{
 		public override IActionResult Index()
 		{
-			MediumViewModel vm = new MediumViewModel(base.GetModel());
+			NewsViewModel vm = new NewsViewModel(base.GetModel());
 
 			ViewData["Message"] = "Your application description page.";
 

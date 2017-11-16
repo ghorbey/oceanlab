@@ -5,6 +5,8 @@ using System.Linq;
 using System.Threading.Tasks;
 using Microsoft.AspNetCore.Mvc;
 using Website.Models;
+using Website.Common;
+using Microsoft.AspNetCore.Mvc.Infrastructure;
 
 namespace Website.Controllers
 {
@@ -16,6 +18,10 @@ namespace Website.Controllers
 
 			wm.OclRate.OclBtcValue = 0.0005;
 			wm.OclRate.OclDollarValue = 0.03;
+
+			//Breadcrumb bc = new Breadcrumb();
+			//bc.GetCurrentBreadcrumb();
+			//Request.Path.Value;
 
 			return View(wm);
 		}
