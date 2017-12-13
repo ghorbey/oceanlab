@@ -9,6 +9,7 @@ using Microsoft.Extensions.DependencyInjection;
 using Microsoft.EntityFrameworkCore;
 using Website.Models;
 using Microsoft.AspNetCore.Mvc.Infrastructure;
+using Website.Context;
 
 namespace Website
 {
@@ -26,6 +27,7 @@ namespace Website
 		{
 			services.AddMvc();
 			services.AddSingleton<IActionContextAccessor, ActionContextAccessor>();
+			services.AddDbContext<WebsiteContext>(options => options.UseSqlServer(Configuration.GetConnectionString("WebsiteDatabase")));
 		}
 
 		// This method gets called by the runtime. Use this method to configure the HTTP request pipeline.
@@ -47,7 +49,7 @@ namespace Website
 			{
 				routes.MapRoute(
 					name: "default",
-					template: "{controller=About}/{action=Index}/{id?}");
+					template: "{controller=Home}/{action=Index}/{id?}");
 			});
 		}
 	}

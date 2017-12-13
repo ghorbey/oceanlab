@@ -7,6 +7,12 @@
 	<div class="bg-dark">
 		<img src="~/images/About/sample-img-banner.jpg" class="img-fluid" alt="Oceanlab" />
 	</div>
+	<nav aria-label="breadcrumb" role="navigation">
+		<ol class="breadcrumb mb-0">
+			<li class="breadcrumb-item"><a asp-area="" asp-controller="Home" asp-action="Index">Home</a></li>
+			<li class="breadcrumb-item active" aria-current="page">Contact</li>
+		</ol>
+	</nav>
 	<div class="sub-container bg-light">
 		<div class="container">
 			<h1>@Model.Title</h1>

@@ -35,6 +35,26 @@ body {
 .bg-light a:hover {
   color: #00AFA7;
 }
+.bg-white {
+  background-color: #FFFFFF !important;
+  border-color: #0F012D;
+  color: #000000;
+}
+.bg-white .title {
+  color: #00AFA7;
+  font-weight: bold;
+  margin-bottom: 30px;
+}
+.bg-white a {
+  color: #00AFA7;
+}
+.bg-white a:hover {
+  color: #00AFA7;
+}
+a.btn-between {
+  position: relative;
+  top: 85px;
+}
 /* Wrapping element */
 /* Set some basic padding to keep content from hitting the edges */
 .read-more {

@@ -23,6 +23,10 @@
     font-style: italic;
 }
 
+.card-bg-dark {
+	color: @fontColorLight;
+}
+
 .nav {
     > .nav-link {
         color: @fontTitleColorDark;
@@ -98,6 +102,18 @@
             background-color: @colDefault;
         }
     }
+}
+
+.btn {
+	border-radius: 0;
+}
+
+a.btn, a.btn:hover, a.btn:active, a.btn:visited, a.btn:focus {
+	color: @btnFontColor !important;
+	background-color: @btnColor;
+	border-color: @btnBorderColor;
+	outline: none !important;
+	box-shadow: none;
 }
 
 @media (max-width: 767px) {

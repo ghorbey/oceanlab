@@ -47,6 +47,31 @@ body {
 	}
 }
 
+.bg-white {
+	background-color: @bgPageDefault !important;
+	border-color: @bgDarkHighlight;
+	color: @fontColorLight;
+
+	.title {
+		color: @fontTitleColorLight;
+		font-weight: bold;
+		margin-bottom: @titleBottomMargin;
+	}
+
+	a {
+		color: @fontTitleColorLight;
+
+		&:hover {
+			color: @fontTitleColorLight;
+		}
+	}
+}
+
+a.btn-between {
+	position: relative;
+	top: 85px;
+}
+
 /* Wrapping element */
 /* Set some basic padding to keep content from hitting the edges */
 .read-more {

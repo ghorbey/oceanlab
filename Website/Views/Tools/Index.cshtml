@@ -4,12 +4,104 @@
 }
 
 <section class="content">
-	<div class="bg-dark">
-		<img src="~/images/About/sample-img-banner.jpg" class="img-fluid" alt="Oceanlab" />
-	</div>
+	<nav aria-label="breadcrumb" role="navigation">
+		<ol class="breadcrumb mb-0">
+			<li class="breadcrumb-item"><a asp-area="" asp-controller="Home" asp-action="Index">Home</a></li>
+			<li class="breadcrumb-item active" aria-current="page">Tools</li>
+		</ol>
+	</nav>
 	<div class="sub-container bg-light">
-		<div class="container">
-			<h1>@Model.Title</h1>
+		<div class="container-fluid">
+			<div class="row">
+				<div class="col-12 col-md-6"><img src="~/images/About/sample-img-block.jpg" class="img-fluid" alt="Image alt" /></div>
+				<div class="col-12 col-md-6">
+					<h2 class="title">About our fabulous tools</h2>
+					<p class="text-justify">Le Lorem Ipsum est simplement du faux texte employé dans la composition et la mise en page avant impression. Le Lorem Ipsum est le faux texte standard de l'imprimerie depuis les années 1500, quand un peintre anonyme assembla ensemble des morceaux de texte pour réaliser un livre spécimen de polices de texte. Il n'a pas fait que survivre cinq siècles, mais s'est aussi adapté à la bureautique informatique, sans que son contenu n'en soit modifié.</p>
+				</div>
+			</div>
+		</div>
+	</div>
+	<div class="sub-container bg-dark">
+		<div class="container-fluid">
+			<div class="row">
+				<div class="col-12 col-md-6 order-md-2"><img src="~/images/About/sample-img-block.jpg" class="img-fluid" alt="Image alt" /></div>
+				<div class="col-12 col-md-6 order-md-1">
+					<h2 class="title">Gravit</h2>
+					<p class="text-justify">Le Lorem Ipsum est simplement du faux texte employé dans la composition et la mise en page avant impression. Le Lorem Ipsum est le faux texte standard de l'imprimerie depuis les années 1500, quand un peintre anonyme assembla ensemble des morceaux de texte pour réaliser un livre spécimen de polices de texte. Il n'a pas fait que survivre cinq siècles, mais s'est aussi adapté à la bureautique informatique, sans que son contenu n'en soit modifié.</p>
+				</div>
+				<h3 class="col-12 title">Some things you can have with gravit</h3>
+			</div>
+			<div class="row card-deck card-bg-dark">
+				<div class="col-12 col-md-4">
+					<div class="card text-center rounded-0">
+						<img class="card-img-top" src="..." alt="Gravity tool 1">
+						<div class="card-body">
+							<h3 class="card-title">Gravity tool 1</h3>
+							<p class="card-text text-justify">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+						</div>
+					</div>
+				</div>
+				<div class="col-12 col-md-4">
+					<div class="card text-center rounded-0">
+						<img class="card-img-top" src="..." alt="Gravity tool 2">
+						<div class="card-body">
+							<h3 class="card-title">Gravity tool 2</h3>
+							<p class="card-text text-justify">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+						</div>
+					</div>
+				</div>
+				<div class="col-12 col-md-4">
+					<div class="card text-center rounded-0">
+						<img class="card-img-top" src="..." alt="Gravity tool 3">
+						<div class="card-body">
+							<h3 class="card-title">Gravity tool 3</h3>
+							<p class="card-text text-justify">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	<a name="tools"></a>
+	<div class="sub-container bg-light">
+		<div class="container-fluid">
+			<div class="row">
+				<h2 class="col-12 title">Some of our tools</h2>
+				<div class="col-12 card border-0 text-center rounded-0 bg-white">
+					<div class="row">
+						<div class="col-md-6">
+							<img class="card-img-top" src="..." alt="Tool 1">
+						</div>
+						<div class="col-md-6">
+							<div class="card-body">
+								<h3 class="card-title">Tool 1</h3>
+								<p class="card-text text-justify">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+								<a href="#tools">^ Tools</a>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="col-12 card border-0 text-center rounded-0 bg-white">
+					<div class="row">
+						<div class="col-md-6">
+							<img class="card-img-top" src="..." alt="Tool 2">
+						</div>
+						<div class="col-md-6">
+							<div class="card-body">
+								<h3 class="card-title">Tool 2</h3>
+								<p class="card-text text-justify">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+								<a href="#tools">^ Tools</a>
+							</div>
+						</div>
+					</div>
+				</div>
+				<h3 class="col-12 title">You need a tool?</h3>
+				<p class="col-12">bla bla</p>
+				<h3 class="col-12 title">Constant evolution of our tools</h3>
+				<p class="col-12">bla bla</p>
+				<h3 class="col-12 title">Token benefits</h3>
+				<p class="col-12">bla bla</p>
+				</div>
 		</div>
 	</div>
 </section>

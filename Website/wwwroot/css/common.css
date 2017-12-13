@@ -16,6 +16,9 @@
 .text-muted {
   font-style: italic;
 }
+.card-bg-dark {
+  color: #000000;
+}
 .nav > .nav-link {
   color: #00AFA7;
 }
@@ -74,6 +77,20 @@
 }
 .navbar .navbar-toggle .icon-bar {
   background-color: #00AFA7;
+}
+.btn {
+  border-radius: 0;
+}
+a.btn,
+a.btn:hover,
+a.btn:active,
+a.btn:visited,
+a.btn:focus {
+  color: #FFFFFF !important;
+  background-color: #00AFA7;
+  border-color: #00AFA7;
+  outline: none !important;
+  box-shadow: none;
 }
 @media (max-width: 767px) {
   .navbar-default .navbar-nav .open .dropdown-menu > li > a {

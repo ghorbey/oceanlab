@@ -7,14 +7,19 @@
 	<div class="bg-dark">
 		<img src="~/images/About/sample-img-banner.jpg" class="img-fluid" alt="Oceanlab" />
 	</div>
+	<nav aria-label="breadcrumb" role="navigation">
+		<ol class="breadcrumb mb-0">
+			<li class="breadcrumb-item"><a asp-area="" asp-controller="Home" asp-action="Index">Home</a></li>
+			<li class="breadcrumb-item active" aria-current="page">About</li>
+		</ol>
+	</nav>
 	<div class="sub-container bg-light">
 		<div class="container-fluid">
 			<div class="row">
-				<div class="col-xs-12 col-md-6"><img src="~/images/About/sample-img-block.jpg" class="img-fluid" alt="Image alt" /></div>
-				<div class="col-xs-12 col-md-6">
-					<h2 class="title">Our vision</h2>
+				<div class="col-12 col-md-6"><img src="~/images/About/sample-img-block.jpg" class="img-fluid" alt="Image alt" /></div>
+				<div class="col-12 col-md-6">
+					<h2 class="title">About Oceanlab</h2>
 					<p class="text-justify">Le Lorem Ipsum est simplement du faux texte employé dans la composition et la mise en page avant impression. Le Lorem Ipsum est le faux texte standard de l'imprimerie depuis les années 1500, quand un peintre anonyme assembla ensemble des morceaux de texte pour réaliser un livre spécimen de polices de texte. Il n'a pas fait que survivre cinq siècles, mais s'est aussi adapté à la bureautique informatique, sans que son contenu n'en soit modifié.</p>
-					<a href="#" class="read-more">read more</a>
 				</div>
 			</div>
 		</div>
@@ -22,11 +27,9 @@
 	<div class="sub-container bg-dark">
 		<div class="container-fluid">
 			<div class="row">
-				<div class="col-xs-12 col-md-6 order-md-2"><img src="~/images/About/sample-img-block.jpg" class="img-fluid" alt="Image alt" /></div>
-				<div class="col-xs-12 col-md-6 order-md-1">
-					<h2 class="title">Our vision</h2>
-					<p class="text-justify">Le Lorem Ipsum est simplement du faux texte employé dans la composition et la mise en page avant impression. Le Lorem Ipsum est le faux texte standard de l'imprimerie depuis les années 1500, quand un peintre anonyme assembla ensemble des morceaux de texte pour réaliser un livre spécimen de polices de texte. Il n'a pas fait que survivre cinq siècles, mais s'est aussi adapté à la bureautique informatique, sans que son contenu n'en soit modifié.</p>
-					<a href="#" class="read-more">read more</a>
+				<h2 class="col-12 title text-center">Punchline</h2>
+				<div class="col-12 text-center">
+					<a href="#" role="button" class="btn btn-primary btn-between">Check out our whitepaper</a>
 				</div>
 			</div>
 		</div>
@@ -34,76 +37,29 @@
 	<div class="sub-container bg-light">
 		<div class="container-fluid">
 			<div class="row">
-				<div class="col-xs-12 col-md-6"><img src="~/images/About/sample-img-block.jpg" class="img-fluid" alt="Image alt" /></div>
-				<div class="col-xs-12 col-md-6">
-					<h2 class="title">Our vision</h2>
-					<p class="text-justify">Le Lorem Ipsum est simplement du faux texte employé dans la composition et la mise en page avant impression. Le Lorem Ipsum est le faux texte standard de l'imprimerie depuis les années 1500, quand un peintre anonyme assembla ensemble des morceaux de texte pour réaliser un livre spécimen de polices de texte. Il n'a pas fait que survivre cinq siècles, mais s'est aussi adapté à la bureautique informatique, sans que son contenu n'en soit modifié.</p>
-					<a href="#" class="read-more">read more</a>
-				</div>
-			</div>
-		</div>
-	</div>
-	<div class="sub-container bg-light">
-		<div class="row">
-			<div class="col-sm-12 col-md-6 col-lg-4">
-				<div class="card text-center">
-					<div class="card-body">
-						<img class="card-img-top" src="~/images/About/sample-img-card-middle.jpg" alt="Card image cap">
-						<h3 class="card-title">Title</h3>
-						<p class="card-text">Content</p>
-						<a href="#" class="card-link read-more">read more</a>
+				<h2 class="title">Meet the team</h2>
+				<div class="row bg-white">
+					<div class="col-12 col-md-6 card-deck">
+						<div class="card border-0 text-center">
+							<img class="card-img-top" src="..." alt="Fabrice Distefano">
+							<div class="card-body">
+								<h3 class="card-title">Fabrice Distefano</h3>
+								<p class="card-subtitle">Founder &amp; Innovation Ikura incubator</p>
+								<a href="#">&#64;sphearis</a>
+								<p class="card-text text-justify">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+							</div>
+						</div>
 					</div>
-				</div>
-			</div>
-			<div class="col-sm-12 col-md-6 col-lg-4">
-				<div class="card text-center">
-					<div class="card-body">
-						<img class="card-img-top" src="~/images/About/sample-img-card-middle.jpg" alt="Card image cap">
-						<h3 class="card-title">Title</h3>
-						<p class="card-text">Content</p>
-						<a href="#" class="card-link read-more">read more</a>
-					</div>
-				</div>
-			</div>
-			<div class="col-sm-12 col-md-6 col-lg-4">
-				<div class="card text-center">
-					<div class="card-body">
-						<img class="card-img-top" src="~/images/About/sample-img-card-middle.jpg" alt="Card image cap">
-						<h3 class="card-title">Title</h3>
-						<p class="card-text">Content</p>
-						<a href="#" class="card-link read-more">read more</a>
-					</div>
-				</div>
-			</div>
-		</div>
-		<div class="row mt-4">
-			<div class="col-sm-12 col-md-6 col-lg-4">
-				<div class="card text-center">
-					<div class="card-body">
-						<img class="card-img-top" src="~/images/About/sample-img-card-middle.jpg" alt="Card image cap">
-						<h3 class="card-title">Title</h3>
-						<p class="card-text">Content</p>
-						<a href="#" class="card-link read-more">read more</a>
-					</div>
-				</div>
-			</div>
-			<div class="col-sm-12 col-md-6 col-lg-4">
-				<div class="card text-center">
-					<div class="card-body">
-						<img class="card-img-top" src="~/images/About/sample-img-card-middle.jpg" alt="Card image cap">
-						<h3 class="card-title">Title</h3>
-						<p class="card-text">Content</p>
-						<a href="#" class="card-link read-more">read more</a>
-					</div>
-				</div>
-			</div>
-			<div class="col-sm-12 col-md-6 col-lg-4">
-				<div class="card text-center">
-					<div class="card-body">
-						<img class="card-img-top" src="~/images/About/sample-img-card-middle.jpg" alt="Card image cap">
-						<h3 class="card-title">Title</h3>
-						<p class="card-text">Content</p>
-						<a href="#" class="card-link read-more">read more</a>
+					<div class="col-12 col-md-6">
+						<div class="card border-0 text-center">
+							<img class="card-img-top" src="..." alt="Olivier Saintelet">
+							<div class="card-body">
+								<h3 class="card-title">Olivier Saintelet</h3>
+								<p class="card-subtitle">Co-Founder &amp; Ocean community Guru</p>
+								<a href="#">&#64;dibatch</a>
+								<p class="card-text text-justify">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+							</div>
+						</div>
 					</div>
 				</div>
 			</div>
@@ -112,33 +68,14 @@
 	<div class="sub-container bg-dark">
 		<div class="container-fluid">
 			<div class="row">
-				<div class="col-xs-12 col-md-6 order-md-2"><img src="~/images/About/sample-img-block.jpg" class="img-fluid" alt="Image alt" /></div>
-				<div class="col-xs-12 col-md-6 order-md-1">
-					<h2 class="title">Our vision</h2>
-					<p class="text-justify">Le Lorem Ipsum est simplement du faux texte employé dans la composition et la mise en page avant impression. Le Lorem Ipsum est le faux texte standard de l'imprimerie depuis les années 1500, quand un peintre anonyme assembla ensemble des morceaux de texte pour réaliser un livre spécimen de polices de texte. Il n'a pas fait que survivre cinq siècles, mais s'est aussi adapté à la bureautique informatique, sans que son contenu n'en soit modifié.</p>
-					<a href="#" class="read-more">read more</a>
+				<h2 class="col-12 title text-center">They talk about us</h2>
+				<div class="col-12">
+					<ul class="list-inline text-center">
+						<li class="list-inline-item"><a href="#"><img src="..." alt="Image 1" /></a></li>
+						<li class="list-inline-item"><a href="#"><img src="..." alt="Image 1" /></a></li>
+					</ul>
 				</div>
 			</div>
 		</div>
 	</div>
-	<div class="sub-container bg-light">
-		<div class="container-fluid">
-			<div class="row">
-				<div class="col-xs-12 col-md-6"><img src="~/images/About/sample-img-block.jpg" class="img-fluid" alt="Image alt" /></div>
-				<div class="col-xs-12 col-md-6">
-					<h2 class="title">Our vision</h2>
-					<p class="text-justify">Le Lorem Ipsum est simplement du faux texte employé dans la composition et la mise en page avant impression. Le Lorem Ipsum est le faux texte standard de l'imprimerie depuis les années 1500, quand un peintre anonyme assembla ensemble des morceaux de texte pour réaliser un livre spécimen de polices de texte. Il n'a pas fait que survivre cinq siècles, mais s'est aussi adapté à la bureautique informatique, sans que son contenu n'en soit modifié.</p>
-					<a href="#" class="read-more">read more</a>
-				</div>
-			</div>
-		</div>
-	</div>
-	@{  if (Model != null && Model.NewsList != null)
-		{
-			<div class="sub-container bg-light">
-				<h2 class="title text-center">News &amp; updates</h2>
-				@Html.Partial("_NewsView", Model.NewsList)
-			</div>
-		}
-	}
 </section>
