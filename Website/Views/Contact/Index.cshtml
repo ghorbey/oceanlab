@@ -14,8 +14,61 @@
 		</ol>
 	</nav>
 	<div class="sub-container bg-light">
-		<div class="container">
-			<h1>@Model.Title</h1>
+		<div class="container-fluid">
+			<form class="container">
+				<div class="row">
+					<div class="col-12 col-md-7">
+						<h2 class="title">Contact us</h2>
+						<div class="form-group">
+							<label for="inputName">Name</label>
+							<input type="text" class="form-control form-control-sm" id="inputName" placeholder="Enter your name" required>
+						</div>
+						<div class="form-group">
+							<label for="inputEmail">Email address</label>
+							<input type="email" class="form-control form-control-sm" id="inputEmail" placeholder="Enter email" required>
+						</div>
+						<div class="form-group">
+							<label for="inputRequestType">Email address</label>
+							<select class="form-control form-control-sm" id="inputRequestType" required>
+								<option>Type 1</option>
+								<option>Type 2</option>
+								<option>Type 3</option>
+								<option>Type 4</option>
+								<option>Other</option>
+							</select>
+						</div>
+						<div class="form-group">
+							<label for="inputSuject">Subject</label>
+							<input type="text" class="form-control form-control-sm" id="inputSuject" placeholder="Enter subject" required>
+						</div>
+					</div>
+					<div class="col-12 col-md-5"><img src="~/images/About/sample-img-block.jpg" class="img-fluid" alt="Image alt" /></div>
+				</div>
+				<div class="row">
+					<div class="col-12">
+						<div class="form-group">
+							<label for="inputMessage"></label>
+							<textarea class="form-control form-control-sm" id="inputMessage" rows="3" placeholder="Message" required></textarea>
+						</div>
+					</div>
+					<div class="col-12 text-right">
+						<button class="btn btn-primary" type="submit">Submit form</button>
+					</div>
+				</div>
+			</form>
+			<div class="row">
+				<div class="col-12">
+					<h3>Social media</h3>
+					<p>bla bla</p>
+				</div>
+				<div class="col-12">
+					<h3>Branding package</h3>
+					<p>bla bla</p>
+				</div>
+				<div class="col-12 text-center">
+					<a href="#" role="button" class="btn btn-primary">Download our branding package</a>
+				</div>
+			</div>
 		</div>
 	</div>
 </section>

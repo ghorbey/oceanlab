@@ -92,6 +92,11 @@ a.btn:focus {
   outline: none !important;
   box-shadow: none;
 }
+button.btn-primary {
+  color: #FFFFFF !important;
+  background-color: #00AFA7;
+  border-color: #00AFA7;
+}
 @media (max-width: 767px) {
   .navbar-default .navbar-nav .open .dropdown-menu > li > a {
     color: #00AFA7;
